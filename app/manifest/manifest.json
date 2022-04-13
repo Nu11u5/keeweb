@@ -1,6 +1,6 @@
 {
-    "name": "KeeWeb",
-    "short_name": "KeeWeb",
+    "name": "KeeWeb DEV",
+    "short_name": "KeeWeb DEV",
     "description": "Free cross-platform password manager compatible with KeePass",
     "start_url": "./",
     "display": "standalone",
@@ -16,6 +16,12 @@
             "src": "icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        }
+    ],
+    "file_handlers": [
+        {
+            "action": "./",
+            "accept": { "application/x-kdbx": [".kdbx"] }
         }
     ]
 }
