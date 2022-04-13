@@ -7,10 +7,12 @@ import { StorageGDrive } from 'storage/impl/storage-gdrive';
 import { StorageOneDrive } from 'storage/impl/storage-onedrive';
 import { StorageTeams } from 'storage/impl/storage-teams';
 import { StorageWebDav } from 'storage/impl/storage-webdav';
+import { StorageFSAccess } from './impl/storage-fsaccess';
 import { createOAuthSession } from 'storage/pkce';
 
 const BuiltInStorage = {
     file: new StorageFile(),
+    fsaccess: new StorageFSAccess(),
     cache: Launcher ? new StorageFileCache() : new StorageCache()
 };
 
